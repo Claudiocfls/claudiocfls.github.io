@@ -5,10 +5,16 @@
 	.title{
 		margin: 0 auto;
 		color: #444;
-		font-weight: 300;	
+		font-weight: 800;	
 		text-align: center;
+		font-size: 40px;
 	}
 
+	.page{
+		width: 1200px;
+		margin: 0 auto;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
 	.paragraph{
 		padding: 12px;
 		border: 1px solid #000;
@@ -26,11 +32,18 @@
 	.cards-item{
 		border-radius: 3px;
 		border: none;
-		height: 200px;
+		height: 300px;
 		margin: 3px;
 		padding: 5px;
 		color: #FFF;
+		transition: transform .2s
 	}
+	.cards-item:hover {
+		color: #000;
+		transform: scale(1.2);
+		box-shadow: 3px 3px grey;
+	}
+
 	.cards-item--blue{
 		background: #100C98;
 	}
@@ -49,53 +62,55 @@
 <html lang="pt">
 	<title>CFLS</title>
 	<body>
-		<div class="title">
-			Repositórios
-		</div>
-		<hr>
+			<div class="page">
+			<div class="title">
+				Repositórios
+			</div>
+			<hr>
 
-		<div class="cards">
-			<div class="cards-wrapper">
-				<div class="cards-item cards-item--blue">
-					<div class="cards-text">
-						texto
+			<div class="cards">
+				<div class="cards-wrapper">
+					<div class="cards-item cards-item--blue">
+						<div class="cards-text">
+							texto
+						</div>
+					</div>
+				</div>
+				<div class="cards-wrapper">
+					<div class="cards-item cards-item--red">
+						<div class="cards-text">
+							texto
+						</div>
+					</div>
+				</div>
+				<div class="cards-wrapper">
+					<div class="cards-item cards-item--green">
+						<div class="cards-text">
+							texto
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="cards-wrapper">
-				<div class="cards-item cards-item--red">
-					<div class="cards-text">
-						texto
+			<div class="cards">
+				<div class="cards-wrapper">
+					<div class="cards-item cards-item--blue">
+						<div class="cards-text">
+							texto
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="cards-wrapper">
-				<div class="cards-item cards-item--green">
-					<div class="cards-text">
-						texto
+				<div class="cards-wrapper">
+					<div class="cards-item cards-item--red">
+						<div class="cards-text">
+							texto
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="cards">
-			<div class="cards-wrapper">
-				<div class="cards-item cards-item--blue">
-					<div class="cards-text">
-						texto
-					</div>
-				</div>
-			</div>
-			<div class="cards-wrapper">
-				<div class="cards-item cards-item--red">
-					<div class="cards-text">
-						texto
-					</div>
-				</div>
-			</div>
-			<div class="cards-wrapper">
-				<div class="cards-item cards-item--green">
-					<div class="cards-text">
-						texto
+				<div class="cards-wrapper">
+					<div class="cards-item cards-item--green">
+						<div class="cards-text">
+							texto
+						</div>
 					</div>
 				</div>
 			</div>
