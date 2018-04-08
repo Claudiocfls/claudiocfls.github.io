@@ -32,6 +32,12 @@
 		float: left;
 		width: 33%;
 	}
+	.cards-title{
+		border: 1px solid #fff;
+		height: 15px;
+		text-align: center;
+		vertical-align: middle;
+	}
 	.cards-item{
 		border-radius: 3px;
 		border: none;
@@ -172,7 +178,10 @@
 				<h1 style='margin-left: 12px;'> All projects </h1>
 				<div class="cards">
 					<div class="cards-wrapper">
-						<div class="cards-item cards-item--blue">
+						<div data-toggle="collapse" data-target="#demo1" class="cards-title">
+							titulo
+						</div>
+						<div id="demo1" class="cards-item cards-item--blue">
 							<div class="cards-body">
 								<div class="cards-body__title">
 									Title
@@ -184,14 +193,20 @@
 						</div>
 					</div>
 					<div class="cards-wrapper">
-						<div class="cards-item cards-item--red">
+						<div data-toggle="collapse" data-target="#demo2" class="cards-title">
+							titulo
+						</div>
+						<div id="demo2" class="cards-item cards-item--red" style="background-color: #f9f9f9">
 							<div class="cards-body">
 								<!-- texto -->
 							</div>
 						</div>
 					</div>
 					<div class="cards-wrapper">
-						<div class="cards-item cards-item--green">
+						<div data-toggle="collapse" data-target="#demo3" class="cards-title">
+							titulo
+						</div>
+						<div id="demo3" class="cards-item cards-item--green">
 							<div class="cards-body">
 								<!-- texto -->
 							</div>
@@ -200,26 +215,16 @@
 				</div>
 				<div class="cards">
 					<div class="cards-wrapper">
-						<div class="cards-item cards-item--blue">
+						<div data-toggle="collapse" data-target="#demo4" class="cards-title">
+							titulo
+						</div>
+						<div id="demo4" class="cards-item cards-item--blue">
 							<div class="cards-body">
 								<!-- texto -->
 							</div>
 						</div>
 					</div>
-					<div class="cards-wrapper">
-						<div class="cards-item cards-item--red">
-							<div class="cards-body">
-								<!-- texto -->
-							</div>
-						</div>
-					</div>
-					<div class="cards-wrapper">
-						<div class="cards-item cards-item--green">
-							<div class="cards-body">
-								<!-- texto -->
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
