@@ -110,7 +110,6 @@
 	}
 	.footer{
 		width: 100%;
-		height: 200px;
 		text-align: center;
 		background-color: #101010;
 		margin: 0 auto;
@@ -123,6 +122,8 @@
 	.footer-right-col{
 		text-align: center;
 	}
+
+	/*somente para celular*/
 	@media only screen and (max-width: 768px) {
 		.cards-wrapper{
 			float: initial;
@@ -141,6 +142,8 @@
 			width: 100%;
 		}
 	}
+
+	/*somente para desktop*/
 	@media only screen and (min-width: 768px) {
 		.cards-title{
 			display: none;
@@ -169,6 +172,9 @@
 			height: auto !important;
 			position: relative !important;
 			padding: 12px !important;
+		}
+		.footer{
+			height: 200px;
 		}
 	}
 </style>
