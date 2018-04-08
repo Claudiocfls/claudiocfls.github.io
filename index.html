@@ -70,8 +70,19 @@
 		text-align: justify;
 		padding: 5px;
 	}
+	@media only screen and (max-width: 768px) {
+		.cards-wrapper{
+			float: initial;
+			width: 100%;
+		}
+		.cards-item:hover {
+			/*transform: scale(1.1);*/
+			background-color: initial;
+		}
+	}
 </style>
 <html lang="pt">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<head>
 		<title>CFLS</title>
 		<meta charset="utf-8">
@@ -83,12 +94,11 @@
 			body {
 				position: relative;
 			}
-			#section1 {padding-top:50px;color: #fff; background-color: #FFF; padding-bottom: 13px;}
-			#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-			#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+			#section1 {padding: 0; padding-top:10px;color: #fff; background-color: #000; padding-bottom: 13px;}
+			#section2 {padding-top:10px;height:500px;color: #fff; background-color: #555;}
+			#section3 {padding-top:10px;height:500px;color: #fff; background-color: #999;}
 		</style>
 	</head>
-
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
@@ -103,16 +113,14 @@
 				<div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">
-							<li><a href="#section1">Section 1</a></li>
-							<li><a href="#section2">Section 2</a></li>
-							<li><a href="#section3">Section 3</a></li>
-						</li>
-					</ul>
+							<li><a href="#section1">All projects</a></li>
+							<li><a href="#section2">In progress</a></li>
+							<li><a href="#section3">Future</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</nav>
-	<div id="section1" class="container-fluid">
+		</nav>
 		<div class="container" style="width: 100%; margin: 0; padding: 0;">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
@@ -120,27 +128,32 @@
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
 					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-					<li data-target="#myCarousel" data-slide-to="4"></li>
 				</ol>
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img style="width:100%; height: 380px; background: #555">
+						<img src="img1.jpg" style="width:100%; height: 380px; background: #555">
+						<div class="carousel-caption">
+							<h3>Nome aqui</h3>
+							<p>Descrição aqui</p>
+						</div>
 					</div>
 					<div class="item">
-						<img style="width:100%; height: 380px; background: #222">
+						<img src="img2.jpeg" style="width:100%; height: 380px; background: #222">
+						<div class="carousel-caption">
+							<h3>Nome aqui</h3>
+							<p>Descrição aqui</p>
+						</div>
 					</div>
 					
 					<div class="item">
-						<img style="width:100%; height: 380px; background: #FFF">
+						<img src="img3.jpeg" style="width:100%; height: 380px; background: #FFF">
+						<div class="carousel-caption">
+							<h3>Nome aqui</h3>
+							<p>Descrição aqui</p>
+						</div>
 					</div>
-					<div class="item">
-						<img style="width:100%; height: 380px; background: #111">
-					</div>
-					<div class="item">
-						<img style="width:100%; height: 380px; background: #111">
-					</div>
+				
 				</div>
 				<!-- Left and right controls -->
 				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -154,77 +167,75 @@
 			</div>
 		</div>
 		<!-- <div class="page"> -->
-		<div>
-			<div class="cards">
-				<div class="cards-wrapper">
-					<div class="cards-item cards-item--blue">
-						<div class="cards-body">
-							<div class="cards-body__title">
-								Title
+		<div id="section1" class="container-fluid">
+			<div>
+				<h1 style='margin-left: 12px;'> All projects </h1>
+				<div class="cards">
+					<div class="cards-wrapper">
+						<div class="cards-item cards-item--blue">
+							<div class="cards-body">
+								<div class="cards-body__title">
+									Title
+								</div>
+								<div class="cards-body__paragraph">
+									Vestibulum quis est maximus, feugiat enim placerat, tincidunt justo. Donec eget dignissim ex, et ullamcorper est. Praesent blandit sagittis posuere. Morbi vel ipsum efficitur, facilisis tellus a, consectetur leo. Morbi feugiat quis purus at suscipit. Mauris aliquet quam odio, non lacinia turpis lacinia quis.
+								</div>
 							</div>
-							<div class="cards-body__paragraph">
-								Vestibulum quis est maximus, feugiat enim placerat, tincidunt justo. Donec eget dignissim ex, et ullamcorper est. Praesent blandit sagittis posuere. Morbi vel ipsum efficitur, facilisis tellus a, consectetur leo. Morbi feugiat quis purus at suscipit. Mauris aliquet quam odio, non lacinia turpis lacinia quis.
+						</div>
+					</div>
+					<div class="cards-wrapper">
+						<div class="cards-item cards-item--red">
+							<div class="cards-body">
+								<!-- texto -->
+							</div>
+						</div>
+					</div>
+					<div class="cards-wrapper">
+						<div class="cards-item cards-item--green">
+							<div class="cards-body">
+								<!-- texto -->
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="cards-wrapper">
-					<div class="cards-item cards-item--red">
-						<div class="cards-body">
-							<!-- texto -->
+				<div class="cards">
+					<div class="cards-wrapper">
+						<div class="cards-item cards-item--blue">
+							<div class="cards-body">
+								<!-- texto -->
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="cards-wrapper">
-					<div class="cards-item cards-item--green">
-						<div class="cards-body">
-							<!-- texto -->
+					<div class="cards-wrapper">
+						<div class="cards-item cards-item--red">
+							<div class="cards-body">
+								<!-- texto -->
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="cards">
-				<div class="cards-wrapper">
-					<div class="cards-item cards-item--blue">
-						<div class="cards-body">
-							<!-- texto -->
-						</div>
-					</div>
-				</div>
-				<div class="cards-wrapper">
-					<div class="cards-item cards-item--red">
-						<div class="cards-body">
-							<!-- texto -->
-						</div>
-					</div>
-				</div>
-				<div class="cards-wrapper">
-					<div class="cards-item cards-item--green">
-						<div class="cards-body">
-							<!-- texto -->
+					<div class="cards-wrapper">
+						<div class="cards-item cards-item--green">
+							<div class="cards-body">
+								<!-- texto -->
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="section2" class="container-fluid">
-		<h1>Section 2</h1>
-		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-	</div>
-	<div id="section3" class="container-fluid">
-		<h1>Section 3</h1>
-		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-	</div>
+		<div id="section2" class="container-fluid">
+			<h1>In progress</h1>
+			
+		</div>
+		<div id="section3" class="container-fluid">
+			<h1>Future</h1>
+			
+		</div>
 		
-
 		
 		
 	</body>
 </html>
-
 <!DOCTYPE html>
 <html>
 	
