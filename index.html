@@ -32,6 +32,19 @@
 		float: left;
 		width: 33%;
 	}
+	.cards-title{
+		background-color: #363636;
+		border: 1px solid #818181;
+		border-left: none;
+		border-right: none;
+		height: 50px;
+		text-align: center;
+	}
+	.cards-title__text{
+		vertical-align: middle;
+		color: #939393;
+		font-size: 20px;
+	}
 	.cards-item{
 		border-radius: 3px;
 		border: none;
@@ -78,6 +91,11 @@
 		.cards-item:hover {
 			/*transform: scale(1.1);*/
 			background-color: initial;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		.cards-title{
+			display: none;
 		}
 	}
 </style>
@@ -172,7 +190,12 @@
 				<h1 style='margin-left: 12px;'> All projects </h1>
 				<div class="cards">
 					<div class="cards-wrapper">
-						<div class="cards-item cards-item--blue">
+						<div data-toggle="collapse" data-target="#demo1" class="cards-title">
+							<div class="cards-title__text">
+								titulo
+							</div>
+						</div>
+						<div id="demo1" class="cards-item cards-item--blue">
 							<div class="cards-body">
 								<div class="cards-body__title">
 									Title
@@ -184,14 +207,24 @@
 						</div>
 					</div>
 					<div class="cards-wrapper">
-						<div class="cards-item cards-item--red">
+						<div data-toggle="collapse" data-target="#demo2" class="cards-title">
+							<div class="cards-title__text">
+								titulo
+							</div>
+						</div>
+						<div id="demo2" class="cards-item cards-item--red" style="background-color: #f9f9f9">
 							<div class="cards-body">
 								<!-- texto -->
 							</div>
 						</div>
 					</div>
 					<div class="cards-wrapper">
-						<div class="cards-item cards-item--green">
+						<div data-toggle="collapse" data-target="#demo3" class="cards-title">
+							<div class="cards-title__text">
+								titulo
+							</div>
+						</div>
+						<div id="demo3" class="cards-item cards-item--green">
 							<div class="cards-body">
 								<!-- texto -->
 							</div>
@@ -200,26 +233,18 @@
 				</div>
 				<div class="cards">
 					<div class="cards-wrapper">
-						<div class="cards-item cards-item--blue">
+						<div data-toggle="collapse" data-target="#demo4" class="cards-title">
+							<div class="cards-title__text">
+								titulo
+							</div>
+						</div>
+						<div id="demo4" class="cards-item cards-item--blue">
 							<div class="cards-body">
 								<!-- texto -->
 							</div>
 						</div>
 					</div>
-					<div class="cards-wrapper">
-						<div class="cards-item cards-item--red">
-							<div class="cards-body">
-								<!-- texto -->
-							</div>
-						</div>
-					</div>
-					<div class="cards-wrapper">
-						<div class="cards-item cards-item--green">
-							<div class="cards-body">
-								<!-- texto -->
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
