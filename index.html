@@ -47,7 +47,7 @@
 		font-size: 20px;
 	}
 	.cards-item{
-		border-radius: 0px;
+		border-radius: 2px;
 		border: none;
 		height: 300px;
 		margin: 3px;
@@ -105,6 +105,10 @@
 	.section-col-50{
 		width: 100%;
 	}
+	.section-title{
+		font-size: 28px;
+		margin-left: 12px;
+	}
 	.footer{
 		width: 100%;
 		text-align: center;
@@ -120,6 +124,10 @@
 		text-align: center;
 	}
 
+	.text-color{
+		color: #000;
+	}
+
 	/*somente para celular*/
 	@media only screen and (max-width: 768px) {
 		.cards-wrapper{
@@ -130,10 +138,6 @@
 			border-radius: 0;
 			padding: 0;
 			margin: 0;
-		}
-		.cards-item:hover {
-			/*transform: scale(1.1);*/
-			background-color: initial;
 		}
 		.page{
 			width: 100%;
@@ -170,6 +174,7 @@
 			height: auto !important;
 			position: relative !important;
 			padding: 12px !important;
+			margin-top: 18px; 
 		}
 		.footer{
 			height: 200px;
@@ -177,9 +182,12 @@
 		.section-background{
 			padding: 12px 5px;
 		}
-		.cards-item:hover {
-			/*transform: scale(1.1);*/
-			background-color: #000;
+		
+		.cards-wrapper{
+			opacity: 0.5;
+		}
+		.cards-wrapper:hover{
+			opacity: 1;
 		}
 	}
 </style>
@@ -273,7 +281,7 @@
 			<div class="page">
 				<div id="section1" class="container-fluid">
 					<div>
-						<h1 style='margin-left: 12px;'> All projects </h1>
+						<h1 class="section-title"> All projects </h1>
 						<div class="cards">
 							<div class="cards-wrapper">
 								<div  class="cards-title" data-toggle="collapse" data-target="#demo1" toggle="false">
@@ -339,11 +347,13 @@
 		<div class="section-background section-background--green">
 			<div class="page">
 				<div id="section2" class="container-fluid">
-					<h1>In progress</h1>
+					<h1 class="section-title">In progress</h1>
 					<div class="section-col-50">
-						<h3> title </h3>
-						<p>Sed eros sem, tincidunt non sem id, sagittis malesuada ex. Praesent auctor dapibus turpis ac ullamcorper. Donec quis turpis porttitor, convallis arcu quis, tincidunt lectus. Etiam lectus nunc, blandit eget sem sed, fermentum imperdiet mi. Phasellus eu erat posuere, tempus lacus vel, efficitur mi. </p>
-						<p>Sed eros sem, tincidunt non sem id, sagittis malesuada ex. Praesent auctor dapibus turpis ac ullamcorper. Donec quis turpis porttitor, convallis arcu quis, tincidunt lectus. Etiam lectus nunc, blandit eget sem sed, fermentum imperdiet mi. Phasellus eu erat posuere, tempus lacus vel, efficitur mi. </p>
+						<div class="text-color">
+							<h3> title </h3>
+							<p>Sed eros sem, tincidunt non sem id, sagittis malesuada ex. Praesent auctor dapibus turpis ac ullamcorper. Donec quis turpis porttitor, convallis arcu quis, tincidunt lectus. Etiam lectus nunc, blandit eget sem sed, fermentum imperdiet mi. Phasellus eu erat posuere, tempus lacus vel, efficitur mi. </p>
+							<p>Sed eros sem, tincidunt non sem id, sagittis malesuada ex. Praesent auctor dapibus turpis ac ullamcorper. Donec quis turpis porttitor, convallis arcu quis, tincidunt lectus. Etiam lectus nunc, blandit eget sem sed, fermentum imperdiet mi. Phasellus eu erat posuere, tempus lacus vel, efficitur mi. </p>
+						</div>
 					</div>
 					<div class="section-col-50">
 						<img src="code1.jpg" class="section_image">
@@ -354,7 +364,7 @@
 		<div class="section-background">
 			<div class="page">
 				<div id="section3" class="container-fluid">
-					<h1>Future</h1>
+					<h1 class="section-title">Future</h1>
 					<div class="section-col-50">
 						<img src="code2.jpg" class="section_image">
 					</div>
